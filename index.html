@@ -49,10 +49,18 @@ Cloud • DevOps • Software Development • Technology Solutions
 <p>📞 9394795384</p>
 <p>📧 pe7@suntrion.com</p>
 
-<a class="btn orange"
-href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:3.0%0AFN:Suntrion Technolosol Pvt Ltd%0AORG:Suntrion Technolosol Pvt Ltd%0ATEL:9394795384%0AEMAIL:pe7@suntrion.com%0AEND:VCARD">
+<a class="btn orange" id="saveContact">
 SAVE CONTACT
 </a>
+
+<script>
+document.getElementById("saveContact").onclick = function(){
+
+window.location.href =
+"intent://contacts/create?name=Suntrion%20Technolosol%20Pvt%20Ltd&phone=9394795384&email=pe7@suntrion.com#Intent;scheme=content;package=com.android.contacts;end";
+
+};
+</script>
 
 <a class="btn" href="brochure.html">
 VIEW BROCHURE
